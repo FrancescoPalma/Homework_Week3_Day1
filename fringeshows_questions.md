@@ -142,7 +142,8 @@ Using the SQL Database file given to you as the source of data to answer the que
 
   This section involves more complex queries.  You will need to go and find out about aggregate funcions in SQL to answer some of the next questions.
 
-  9. Select the names and prices of all shows, ordered by price in ascending order.
+  9. Select the names and prices of all shows, ordered by price in ascending order.  
+  `SELECT name ||' '|| price FROM shows ORDER BY price LIMIT 1 OFFSET 1;`
 
   10. Select the average price of all shows.
 
@@ -167,7 +168,8 @@ Using the SQL Database file given to you as the source of data to answer the que
 
   18. Select the time for the Edinburgh Royal Tattoo.
 
-  19. Select the number of users who want to see "Shitfaced Shakespeare".
+  19. Select the number of users who want to see "Shitfaced Shakespeare".  
+  `SELECT count FROM shows_users inner join shows on shows_users, show_id + shows_id where shows, name = ' ';`
 
   20. Select all of the user names and the count of shows they're going to see.
 
